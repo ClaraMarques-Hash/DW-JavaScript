@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Informações do IP</title>
+  <link rel="stylesheet" href="FrontEnd.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card mt-5">
+      <div class="card-body">
+        <h1>Informações do IP</h1>
+        <hr />
+        
+        <div id="alert-info"></div>
+
+        <div class="form-row" style="display: flex; gap: 10px; margin-bottom: 20px;">
+          <input id="ipInput" type="text" placeholder="Digite um IP (ex: 8.8.8.8)" />
+          <button id="btnBuscar">Buscar</button>
+        </div>
+
+        <div class="tabela" id="tabelaContainer">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>IP</th>
+                <th>Org</th>
+                <th>País</th>
+                <th>Cidade</th>
+                <th>Remover</th>
+              </tr>
+            </thead>
+            <tbody id="ipData"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="FrontEnd.js"></script>
+</body>
+</html>
